@@ -1,6 +1,6 @@
-package com.example.calculator.Services;
+package com.example.calculator.services;
 
-import com.example.calculator.Exceptions.DivideOnZeroException;
+import com.example.calculator.exceptions.DivideOnZeroException;
 import org.springframework.stereotype.Service;
 //import org.apache.commons.lang3.StringUtils;
 

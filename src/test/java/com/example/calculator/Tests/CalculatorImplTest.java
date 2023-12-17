@@ -1,8 +1,7 @@
 package com.example.calculator.Tests;
 
-import com.example.calculator.Exceptions.DivideOnZeroException;
-import com.example.calculator.Services.Calculator;
-import com.example.calculator.Services.CalculatorImpl;
+import com.example.calculator.exceptions.DivideOnZeroException;
+import com.example.calculator.services.CalculatorImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

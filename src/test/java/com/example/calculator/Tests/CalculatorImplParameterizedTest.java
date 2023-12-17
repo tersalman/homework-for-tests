@@ -1,6 +1,6 @@
 package com.example.calculator.Tests;
 
-import com.example.calculator.Services.CalculatorImpl;
+import com.example.calculator.services.CalculatorImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -20,8 +20,8 @@ public class CalculatorImplParameterizedTest {
     }
     @ParameterizedTest
     @MethodSource("provideParamsForTests")
-    public void shouldCalculateMinus() {
-        int a = 2, b = 2;
+    public void shouldCalculateMinus(int a , int b) {
+
         int expected = a - b;
         int actualResult = calculator.minus(a, b);
 
@@ -29,8 +29,8 @@ public class CalculatorImplParameterizedTest {
     }
     @ParameterizedTest
     @MethodSource("provideParamsForTests")
-    public void shouldCalculateMultiply() {
-        int a = 2, b = 2;
+    public void shouldCalculateMultiply(int a , int b) {
+
         int expected = a * b;
         int actualResult = calculator.multiply(a, b);
 
@@ -38,8 +38,8 @@ public class CalculatorImplParameterizedTest {
     }
     @ParameterizedTest
     @MethodSource("provideParamsForTests")
-    public void shouldCalculateDivide() {
-        int a = 2, b = 2;
+    public void shouldCalculateDivide(int a , int b) {
+
         double expected = (double) a / b;
         double actualResult = calculator.divide(a, b);
 
